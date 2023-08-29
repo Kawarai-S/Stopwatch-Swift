@@ -14,7 +14,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A57556D22A9EA80E00D5D482 /* Stopeatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stopeatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A57556D22A9EA80E00D5D482 /* Stopwatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stopwatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A57556D52A9EA80E00D5D482 /* StopeatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopeatchApp.swift; sourceTree = "<group>"; };
 		A57556D72A9EA80E00D5D482 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A57556D92A9EA80F00D5D482 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -43,7 +43,7 @@
 		A57556D32A9EA80E00D5D482 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A57556D22A9EA80E00D5D482 /* Stopeatch.app */,
+				A57556D22A9EA80E00D5D482 /* Stopwatch.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,9 +70,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A57556D12A9EA80E00D5D482 /* Stopeatch */ = {
+		A57556D12A9EA80E00D5D482 /* Stopwatch */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A57556E02A9EA80F00D5D482 /* Build configuration list for PBXNativeTarget "Stopeatch" */;
+			buildConfigurationList = A57556E02A9EA80F00D5D482 /* Build configuration list for PBXNativeTarget "Stopwatch" */;
 			buildPhases = (
 				A57556CE2A9EA80E00D5D482 /* Sources */,
 				A57556CF2A9EA80E00D5D482 /* Frameworks */,
@@ -82,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = Stopeatch;
+			name = Stopwatch;
 			productName = Stopeatch;
-			productReference = A57556D22A9EA80E00D5D482 /* Stopeatch.app */;
+			productReference = A57556D22A9EA80E00D5D482 /* Stopwatch.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +102,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A57556CD2A9EA80E00D5D482 /* Build configuration list for PBXProject "Stopeatch" */;
+			buildConfigurationList = A57556CD2A9EA80E00D5D482 /* Build configuration list for PBXProject "Stopwatch" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +115,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A57556D12A9EA80E00D5D482 /* Stopeatch */,
+				A57556D12A9EA80E00D5D482 /* Stopwatch */,
 			);
 		};
 /* End PBXProject section */
@@ -273,8 +273,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,8 +301,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -320,7 +318,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A57556CD2A9EA80E00D5D482 /* Build configuration list for PBXProject "Stopeatch" */ = {
+		A57556CD2A9EA80E00D5D482 /* Build configuration list for PBXProject "Stopwatch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A57556DE2A9EA80F00D5D482 /* Debug */,
@@ -329,7 +327,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A57556E02A9EA80F00D5D482 /* Build configuration list for PBXNativeTarget "Stopeatch" */ = {
+		A57556E02A9EA80F00D5D482 /* Build configuration list for PBXNativeTarget "Stopwatch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A57556E12A9EA80F00D5D482 /* Debug */,
