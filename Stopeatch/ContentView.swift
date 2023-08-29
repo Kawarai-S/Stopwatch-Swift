@@ -14,52 +14,52 @@ struct ContentView: View {
         VStack {
             Text(String(format: "%.1f", secondsElapsed))
                 .font(Font(UIFont.monospacedDigitSystemFont(ofSize: 120, weight: .black)))
-            Button{
-                if timer == nil {
-                    timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true){ _ in
-                        secondsElapsed += 0.1
-                    }
-                }
-            }label: {
-                Text("Start")
-                    .font(.largeTitle)
-                    .frame(width: 200)
-                    .foregroundColor(.white)
-                    .padding()
-                    .background(.green)
-                    .cornerRadius(10)
-            }
-            Button{
-                if let time = timer {
-                    time.invalidate()
-                }
-                timer = nil
-            }label: {
-                Text("Stop")
-                    .font(.largeTitle)
-                    .frame(width: 200)
-                    .foregroundColor(.white)
-                    .padding()
-                    .background(.red)
-                    .cornerRadius(10)
-            }
-            Button{
-                if let time = timer{
-                    time.invalidate()
-                }
-                timer = nil
-                secondsElapsed = 0
-            }label: {
-                Text("Reset")
-                    .font(.largeTitle)
-                    .frame(width: 200)
-                    .foregroundColor(.white)
-                    .padding()
-                    .background(.gray)
-                    .cornerRadius(10)
-            }
+            ButtonView(buttonAction: {start()}, text: "Start",color: .green)
+            ButtonView(buttonAction: {stop()}, text: "Stop",color: .red)
+            ButtonView(buttonAction: {reset()}, text: "Reset",color: .gray)
+            
         }
         .padding()
+    }
+    func start() {
+        if timer == nil {
+            timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true){ _ in
+                secondsElapsed += 0.1
+            }
+        }
+    }
+    func stop() {
+        if let time = timer {
+            time.invalidate()
+        }
+        timer = nil
+    }
+    func reset() {
+        if let time = timer{
+            time.invalidate()
+        }
+        timer = nil
+        secondsElapsed = 0
+    }
+}
+
+struct ButtonView: View {
+    let buttonAction: () -> Void
+    let text: String
+    let color: Color
+    
+    var body: some View {
+        Button {
+            buttonAction()
+        } label: {
+            Text(text)
+                .font(.largeTitle)
+                .frame(width: 200)
+                .foregroundColor(.white)
+                .padding()
+                .background(color)
+                .cornerRadius(10)
+        }
     }
 }
 
